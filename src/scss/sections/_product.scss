@@ -20,11 +20,12 @@
     margin-top: 39px;
   }
 
-  @include breakpoint(large-medium-device);
-  margin-bottom: 30px;
-  &__card-holder {
-    flex-wrap: wrap;
-    justify-content: center;
+  @include breakpoint(large-medium-device) {
+    margin-bottom: 30px;
+    &__card-holder {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
 .product-card {
