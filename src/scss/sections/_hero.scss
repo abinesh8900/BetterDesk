@@ -1,0 +1,33 @@
+.hero {
+  background: url(../images/illustration.png), clr(color-primary-purpel);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 100vh;
+  position: relative;
+}
+.hero__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero__heading {
+  color: clr(color-primary-white);
+  line-height: lh(lh-1.13);
+}
+.input-area {
+  @include input-area(422px);
+}
+.input-area-dark {
+  & > input {
+    color: clr(color-primary-white);
+    background-color: clr(color-opacity-primary-white);
+
+    &::placeholder {
+      color: clr(color-primary-white);
+    }
+  }
+  &__submit-btn {
+    color: clr(color-primary-white);
+    background-color: clr(color-primary-green);
+  }
+}

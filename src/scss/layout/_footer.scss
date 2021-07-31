@@ -1,0 +1,74 @@
+.footer {
+  padding: 74px 60px;
+  background-color: clr(color-primary-dark-blue);
+  color: clr(color-primary-white);
+}
+.branding {
+  flex-grow: 2;
+
+  &__logo {
+    max-height: 24px;
+  }
+
+  &__desc {
+    max-width: 196px;
+    margin-top: 15px;
+    font-size: fs(fs-12);
+    line-height: lh(lh-1.56);
+    font-weight: 100;
+    opacity: 0.6;
+
+    & > a {
+      color: clr(color-primary-white);
+    }
+  }
+}
+.footer-nav {
+  flex-grow: 1;
+  &__heading {
+    font-size: fs(fs-13);
+    line-height: lh(lh-1.08);
+  }
+  &__link {
+    font-size: fs(fs-12);
+    opacity: 0.6;
+    margin-top: 18px;
+
+    & > a {
+      color: clr(color-primary-white);
+    }
+  }
+}
+.social-icons {
+  flex-grow: 3;
+  text-align: end;
+  &__twitter::after {
+    @include icon("\f099", fs-24, 5px, color-primary-white);
+  }
+  &__facebook::after {
+    @include icon("\f39e", fs-24, 5px, color-primary-white);
+  }
+  &__linkedin::after {
+    @include icon("\f0e1", fs-24, 5px, color-primary-white);
+  }
+}
+.footer-bottom {
+  padding: 34px 0 38px 0;
+  background-color: clr(color-primary-purpel);
+  color: clr(color-primary-white);
+
+  &__desc {
+    max-width: 885px;
+    font-size: fs(fs-12);
+    font-weight: 100;
+
+    & > span {
+      font-weight: 600;
+    }
+    & > a {
+      color: clr(color-primary-white);
+      text-decoration: underline;
+      line-height: lh(lh-2);
+    }
+  }
+}

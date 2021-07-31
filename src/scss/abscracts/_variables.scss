@@ -1,0 +1,59 @@
+//COLORS
+$color: (
+  color-transparent: transparent,
+  color-primary-white: #ffffff,
+  color-secondary-white: #f9fafa,
+  color-tertiary-white: #eeeeee,
+  color-primary-green: #3dbdb6,
+  color-primary-purpel: #3e3e58,
+  color-opacity-primary-white: #ffffff33,
+  color-secondart-black: #333333,
+  color-tertiary-black: #4a4a4a,
+  color-primary-silver: #72808e,
+  color-primary-blue: #2d8cff,
+  color-opacity-secondary-bule: #1890a480,
+  color-secondary-blue: #0b5e6e,
+  color-primary-dark-blue: #1f2532,
+  color-secondary-voilet: #39394d,
+  color-primary-voilet: #3d3f6d,
+  color-opacity-primary-dark-blue: #08194180,
+);
+
+$linear-gradient-green-blue: linear-gradient(132deg, #3dbdb6 6%, #0089ce 100%);
+$linear-gradient-voilet: linear-gradient(309deg, #7a86cc 91%, #9facf8);
+$linear-gradient-pink: linear-gradient(
+  to bottom,
+  #f3778f,
+  #f26a95 44%,
+  #f15a9d
+);
+$linear-gradient-blue: linear-gradient(98deg, #1172d0 1%, #1d98d6 89%);
+
+$box-shadow-black: 1px 2px 3px 0 #0000001a;
+
+//FONT SIZE
+$font-size: (
+  fs-0: 0px,
+  fs-12: 12px,
+  fs-13: 13px,
+  fs-14: 14px,
+  fs-16: 16px,
+  fs-18: 18px,
+  fs-20: 20px,
+  fs-24: 24px,
+  fs-28: 28px,
+  fs-32: 32px,
+  fs-40: 40px,
+  fs-48: 48px,
+);
+
+//LINE HEIGHT
+$line-height: (
+  lh-1.08: 1.08,
+  lh-1.13: 1.13,
+  lh-1.38: 1.38,
+  lh-1.43: 1.43,
+  lh-1.56: 1.56,
+  lh-2: 2,
+  lh-2.8: 2.8,
+);

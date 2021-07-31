@@ -1,0 +1,106 @@
+.banner-top-bar {
+  background: $linear-gradient-blue;
+  padding: 40px 0;
+
+  &__content {
+    flex-basis: 687px;
+    color: clr(color-primary-white);
+
+    &--desc {
+      font-size: fs(fs-24);
+    }
+    &--desc > strong {
+      font-size: fs(fs-28);
+    }
+    &--link {
+      margin-top: 21px;
+      color: clr(color-primary-white);
+      text-decoration: underline;
+      font-size: fs(fs-16);
+    }
+  }
+}
+.banner-body {
+  background-image: url(/dist/images/woman-690036-1280.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: clr(color-opacity-primary-dark-blue);
+  background-blend-mode: overlay;
+  //   opacity: 0.5;
+  height: 719px;
+}
+.banner-body__content {
+  flex-basis: 836px;
+  color: clr(color-primary-white);
+  font-family: OpenSans;
+
+  &--heading {
+    font-style: italic;
+    font-weight: 300;
+    line-height: lh(lh-1.08);
+  }
+  &--caption {
+    margin-top: 31px;
+    font-size: fs(fs-18);
+  }
+  &--play-btn {
+    margin: 40px 0 78px 0;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background: $linear-gradient-green-blue;
+
+    &::after {
+      @include icon("\f04b", fs-24, 5px, color-primary-voilet);
+    }
+  }
+}
+.banner-bottom {
+  padding: 41px 0;
+
+  &__card {
+    width: 256px;
+
+    &-picture {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+
+      &::after {
+        @include icon("\f04b", fs-14, 5px, color-primary-white);
+      }
+    }
+    &-picture-1 {
+      background-image: url(/dist/images/userpic-1.png);
+    }
+    &-picture-2 {
+      background-image: url(/dist/images/userpic-2.png);
+    }
+    &-picture-3 {
+      background-image: url(/dist/images/userpic-3.png);
+    }
+    &-picture-4 {
+      background-image: url(/dist/images/userpic-4.png);
+    }
+
+    &-picture:hover::after {
+      display: none;
+    }
+    &-picture:hover + .banner-bottom__card-holder {
+      opacity: 1;
+    }
+  }
+  &__card-holder {
+    margin-left: 23px;
+    opacity: 0.6;
+
+    &-name {
+      font-size: fs(fs-18);
+      color: clr(color-secondary-voilet);
+    }
+    &-logo {
+      margin-top: 13px;
+    }
+  }
+}

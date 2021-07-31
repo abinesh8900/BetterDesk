@@ -1,0 +1,27 @@
+.card-wrap {
+  padding: 80px 0;
+
+  &__heading {
+    color: clr(color-tertiary-black);
+    margin: 73px;
+  }
+}
+.card-wrap__card {
+  padding: 0 10px;
+  &--picture {
+    max-height: 280px;
+  }
+  &--picture > img {
+    width: 100%;
+  }
+  &--desc {
+    margin-top: 31px;
+    max-width: 250px;
+    font-size: fs(fs-18);
+    color: clr(color-secondary-voilet);
+    line-height: lh(lh-1.43);
+  }
+  &--navigation {
+    margin-top: 29px;
+  }
+}

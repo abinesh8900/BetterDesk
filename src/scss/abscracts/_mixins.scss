@@ -1,0 +1,84 @@
+@mixin nav-items($paddingValue) {
+  padding: $paddingValue;
+  border-bottom: 4px solid clr(color-transparent);
+
+  &:hover {
+    border-bottom-color: clr(color-primary-green);
+
+    & > a {
+      opacity: 1;
+    }
+  }
+  & > a {
+    color: clr(color-primary-white);
+    opacity: 0.5;
+  }
+
+  @include breakpoint(header-nav) {
+    align-self: center;
+    border: 0;
+  }
+}
+
+@mixin input-area($widthValue) {
+  margin-top: 47px;
+  max-width: $widthValue;
+
+  & > input {
+    width: 100%;
+    height: 52px;
+    padding-left: 20px;
+    font-size: fs(fs-16);
+    border-radius: 3px 0 0 3px;
+    flex-basis: 302px;
+
+    &::placeholder {
+      opacity: 0.9;
+    }
+  }
+
+  &__submit-btn,
+  &-submit-btn {
+    flex-basis: 120px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+// **************** //
+
+@mixin icon($icon, $fsValue, $ml, $colorValue) {
+  content: $icon;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: fs($fsValue);
+  margin-left: $ml;
+  color: clr($colorValue);
+}
+
+// @mixin breakpoint($point){
+//   @if $point == footer-container {
+//     @media screen and (max-width: 1000px){
+//       @content;
+//     }
+//   }@else{
+
+//   }
+// }
+
+// Break pointes
+
+@mixin breakpoint($point) {
+  @if $point == header-nav {
+    @media screen and (max-width: 800px) {
+      .hidden {
+        display: none;
+      }
+      @content;
+    }
+  } @else if $point == size-tablet {
+    @media screen and (max-width: 650px) {
+      @content;
+    }
+  }
+}

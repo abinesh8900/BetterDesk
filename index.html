@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f7256d9da1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Better Desk</title>
+  </head>
+  <body>
+    <header class="top-header">
+      <div
+        class="nav container mx-auto flex justify-space-between items-center"
+      >
+        <a class="nav__logo logo" href="javascript:void(0)">
+          <img src="dist/images/logo.png" alt="logo" />
+        </a>
+        <div>
+          <button
+            type="button"
+            class="nav-menu fas fa-bars"
+            id="menu-btn"
+          ></button>
+          <button
+            type="button"
+            class="close-nav fas fa-times hidden"
+            id="close-btn"
+          ></button>
+        </div>
+        <nav class="nav__holder hidden" id="show-nav">
+          <ul class="flex">
+            <li class="nav__item">
+              <a href="javascript:void(0)">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)">Demo</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)">Resources</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)">Sign In</a>
+            </li>
+            <li class="nav__item-btn">
+              <a href="javascript:void(0)">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container mx-auto">
+          <div class="hero__content">
+            <h1 class="hero__heading">
+              Build a <br />
+              company your <br />
+              customers love.
+            </h1>
+
+            <form
+              action=""
+              method="get"
+              class="flex input-area input-area-dark"
+            >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your work email"
+              />
+              <button
+                class="input-area__submit-btn input-area-dark__submit-btn"
+                type="submit"
+              >
+                <strong> Sign Up</strong>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="product-wrap text-center" style="display: none">
+        <div class="product-wrap__product-bar flex justify-center">
+          <figure class="product-wrap__product-bar--product">
+            <a href="javascript:void(0)">
+              <img src="dist/images/logo-1.png" alt="basecamp" />
+            </a>
+          </figure>
+          <figure class="product-wrap__product-bar--product">
+            <a href="javascript:void(0)">
+              <img src="dist/images/logo-2.png" alt="grubhub" />
+            </a>
+          </figure>
+          <figure class="product-wrap__product-bar--product">
+            <a href="javascript:void(0)">
+              <img src="dist/images/logo-3.png" alt="trello" />
+            </a>
+          </figure>
+          <figure class="product-wrap__product-bar--product">
+            <a href="javascript:void(0)">
+              <img src="dist/images/logo-4.png" alt="buffer" />
+            </a>
+          </figure>
+          <figure class="product-wrap__product-bar--product">
+            <a href="javascript:void(0)">
+              <img src="dist/images/logo-5.png" alt="pocket" />
+            </a>
+          </figure>
+        </div>
+
+        <h3 class="product-wrap__heading">
+          Let’s make customer support interaction<br />
+          <strong>more human</strong> &
+          <strong> reliable.</strong>
+        </h3>
+
+        <div
+          class="flex product-wrap__card-holder justify-space-between mx-auto"
+        >
+          <div class="product-card">
+            <figure
+              class="product-card__picture product-card__picture-blue mx-auto"
+            >
+              <img src="dist/images/noun-550443.png" alt="support" />
+            </figure>
+            <h5 class="product-card__heading">Support</h5>
+            <p class="product-card__desc">
+              Vestibulum rutrum quam vitae fringilla tincid.
+            </p>
+            <a
+              class="inline-block product-card__navigation navigation"
+              href="javacsript:void(0)"
+              >Learn More</a
+            >
+          </div>
+
+          <div class="product-card">
+            <figure
+              class="product-card__picture product-card__picture-voilet mx-auto"
+            >
+              <img src="dist/images/noun-744331.png" alt="help desk" />
+            </figure>
+            <h5 class="product-card__heading">Help Desk</h5>
+            <p class="product-card__desc">
+              Cras quis nulla commodo, aliquam lectus sed.
+            </p>
+            <a
+              class="inline-block product-card__navigation navigation"
+              href="javacsript:void(0)"
+              >Learn More</a
+            >
+          </div>
+
+          <div class="product-card">
+            <figure
+              class="product-card__picture product-card__picture-pink mx-auto"
+            >
+              <img src="dist/images/noun-812887.png" alt="Chat" />
+            </figure>
+            <h5 class="product-card__heading">Chat</h5>
+            <p class="product-card__desc">
+              Fusce vehicula dolor arcu, sit amet blandit dolor.
+            </p>
+            <a
+              class="inline-block product-card__navigation navigation"
+              href="javacsript:void(0)"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="info-wrap">
+        <div class="container mx-auto">
+          <article class="info-wrap__header text-center">
+            <h2 class="info-wrap__header--heading">Why BetterDesk</h2>
+            <p class="info-wrap__header--desc">
+              Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+              Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+              sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod
+              scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.
+            </p>
+          </article>
+          <div class="info-wrap__content flex justify-space-between">
+            <div class="info-wrap__content--desc">
+              <article class="info-wrap__left-content">
+                <h4 class="info-wrap__left-content--heading">
+                  Support for growing business
+                </h4>
+                <p class="info-wrap__left-content--desc">
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor. Pellentesque non dignissim neque. Ut porta.
+                </p>
+              </article>
+              <ul class="info-wrap__left-content--list-holder">
+                <li class="info-wrap__left-content--list">
+                  1 billion interactions per year
+                </li>
+                <li class="info-wrap__left-content--list">Minimal effort</li>
+                <li class="info-wrap__left-content--list">Maximum knowledge</li>
+              </ul>
+            </div>
+            <figure class="info-wrap__content--picture">
+              <img src="dist/images/to-do-list.png" alt="to-do-list" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="card-wrap text-center">
+        <h2 class="card-wrap__heading">Learn More About Us</h2>
+        <div class="flex container mx-auto">
+          <div class="card-wrap__card">
+            <figure class="card-wrap__card--picture">
+              <img src="dist/images/women-1209678-480.png" alt="women" />
+            </figure>
+            <p class="card-wrap__card--desc mx-auto">
+              Vestibulum rutrum quam vitae fringilla.
+            </p>
+            <a
+              href="javascript:void(0)"
+              class="card-wrap__card--navigation navigation inline-block"
+            >
+              Learn More
+            </a>
+          </div>
+          <div class="card-wrap__card">
+            <figure class="card-wrap__card--picture">
+              <img src="dist/images/adult-1850177-480.png" alt="reading" />
+            </figure>
+            <p class="card-wrap__card--desc mx-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscin.
+            </p>
+            <a
+              href="javascript:void(0)"
+              class="card-wrap__card--navigation navigation inline-block"
+            >
+              Learn More
+            </a>
+          </div>
+          <div class="card-wrap__card">
+            <figure class="card-wrap__card--picture">
+              <img src="dist/images/rectangle-2-copy.png" alt="learning" />
+            </figure>
+            <p class="card-wrap__card--desc mx-auto">
+              Fusce vehicula dolor arcu, sit amet blan.
+            </p>
+            <a
+              href="javascript:void(0)"
+              class="card-wrap__card--navigation navigation inline-block"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner-top-bar">
+          <div class="container container flex mx-auto items-center">
+            <article class="banner-top-bar__content">
+              <p class="banner-top-bar__content--desc">
+                <strong>BetterDesk </strong>
+                is recognized as top Unified Communications provider in 2016
+                Magic Quandrant
+              </p>
+              <a
+                class="banner-top-bar__content--link inline-block"
+                href="javascript:void(0)"
+                >Read Report</a
+              >
+            </article>
+            <figure>
+              <img src="dist/images/112233.png" alt="brand name" />
+            </figure>
+          </div>
+        </div>
+        <div class="banner-body flex items-end justify-center text-center">
+          <div class="banner-body__content">
+            <h2 class="banner-body__content--heading">
+              “When BetterDesk was introduced, our business grows a lot —
+              Strongly recommend.”
+            </h2>
+            <p class="banner-body__content--caption">
+              Sharon Herrera at Buffer
+            </p>
+            <button
+              class="banner-body__content--play-btn"
+              type="button"
+            ></button>
+          </div>
+        </div>
+        <div
+          class="banner-bottom container mx-auto flex justify-center"
+          style="display: none"
+        >
+          <div class="flex justify-center items-center banner-bottom__card">
+            <button
+              type="button"
+              class="banner-bottom__card-picture banner-bottom__card-picture-1"
+            ></button>
+            <div class="banner-bottom__card-holder">
+              <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
+              <figure class="banner-bottom__card-holder-logo">
+                <img src="/dist/images/logo-4.png" alt="logo-4" />
+              </figure>
+            </div>
+          </div>
+          <div class="flex justify-center items-center banner-bottom__card">
+            <button
+              type="button"
+              class="banner-bottom__card-picture banner-bottom__card-picture-2"
+            ></button>
+            <div class="banner-bottom__card-holder">
+              <p class="banner-bottom__card-holder-name">Diana Moreno</p>
+              <figure class="banner-bottom__card-holder-logo">
+                <img src="/dist/images/logo-2.png" alt="logo-2" />
+              </figure>
+            </div>
+          </div>
+          <div class="flex justify-center items-center banner-bottom__card">
+            <button
+              type="button"
+              class="banner-bottom__card-picture banner-bottom__card-picture-3"
+            ></button>
+            <div class="banner-bottom__card-holder">
+              <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
+              <figure class="banner-bottom__card-holder-logo">
+                <img src="/dist/images/logo-3.png" alt="logo-3" />
+              </figure>
+            </div>
+          </div>
+          <div class="flex justify-center items-center banner-bottom__card">
+            <button
+              type="button"
+              class="banner-bottom__card-picture banner-bottom__card-picture-4"
+            ></button>
+            <div class="banner-bottom__card-holder">
+              <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
+              <figure class="banner-bottom__card-holder-logo">
+                <img src="/dist/images/logo-1.png" alt="logo-1" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="input-wrap text-center">
+        <div class="container mx-auto">
+          <h2 class="input-wrap__heading">
+            Great Products Deliver Happiness to Users
+          </h2>
+
+          <form
+            action=""
+            method="get"
+            class="flex input-wrap__input-area justify-center"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your work email"
+            />
+            <button class="input-wrap__input-area-submit-btn" type="submit">
+              <strong> Sign Up</strong>
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="footer">
+          <div class="container mx-auto flex justify-space-between">
+            <div class="branding">
+              <figure class="branding__logo">
+                <img src="/dist/images/logo.png" alt="logo" />
+              </figure>
+              <p class="branding__desc">
+                This template is created by
+                <a href="javascript:void(0)">@iamjoannajiang</a>. UX Designer @
+                <a href="javascript:void(0)">www.betterdesign.io</a>
+              </p>
+            </div>
+            <ul class="footer-nav">
+              <li class="footer-nav__heading">ABOUT</li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Our Mission</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Company</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Jobs</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Blog</a>
+              </li>
+            </ul>
+
+            <ul class="footer-nav">
+              <li class="footer-nav__heading">FAQ</li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Help Center</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Terms of Service</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Terms of Service</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Privacy Policy</a>
+              </li>
+            </ul>
+
+            <ul class="footer-nav">
+              <li class="footer-nav__heading">CONTACT</li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Email Us</a>
+              </li>
+              <li class="footer-nav__link">
+                <a href="javascript:void(0)">Live Chat</a>
+              </li>
+            </ul>
+            <div class="social-icons">
+              <a class="social-icons__twitter" href="javascript:void(0)"></a>
+              <a class="social-icons__facebook" href="javascript:void(0)"></a>
+              <a class="social-icons__linkedin" href="javascript:void(0)"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="container mx-auto footer-bottom__desc text-center">
+            Thank you for downloading BetterDesk Sketch template. You are
+            invited to join 1300+ designers on
+            <span>Design Community</span> on <span>Slack</span> at
+            <a href="javacsript">www.uxdesigncommunity.com</a> We look forward
+            to see you there!
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
