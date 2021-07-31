@@ -5,6 +5,9 @@
   &__heading {
     color: clr(color-primary-white);
   }
+  // @include breakpoint(medium-device) {
+  //   flex-direction: column;
+  // }
 }
 .input-wrap__input-area {
   @include input-area(unset);

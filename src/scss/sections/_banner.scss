@@ -1,25 +1,44 @@
 .banner-top-bar {
   background: $linear-gradient-blue;
   padding: 40px 0;
-
-  &__content {
-    flex-basis: 687px;
-    color: clr(color-primary-white);
-
-    &--desc {
-      font-size: fs(fs-24);
+  & > div {
+    @include breakpoint(medium-device) {
+      flex-direction: column-reverse;
+      text-align: center;
     }
-    &--desc > strong {
-      font-size: fs(fs-28);
+  }
+
+  &__logo {
+    max-height: 55px;
+    @include breakpoint(medium-device) {
+      margin-bottom: 30px;
     }
-    &--link {
-      margin-top: 21px;
-      color: clr(color-primary-white);
-      text-decoration: underline;
-      font-size: fs(fs-16);
+    & > img {
+      width: 100%;
     }
   }
 }
+.banner-top-bar__content {
+  flex-basis: 687px;
+  color: clr(color-primary-white);
+  @include breakpoint(medium-device) {
+    flex-basis: unset;
+  }
+
+  &--desc {
+    font-size: fs(fs-24);
+  }
+  &--desc > strong {
+    font-size: fs(fs-28);
+  }
+  &--link {
+    margin-top: 21px;
+    color: clr(color-primary-white);
+    text-decoration: underline;
+    font-size: fs(fs-16);
+  }
+}
+
 .banner-body {
   background-image: url(/dist/images/woman-690036-1280.png);
   background-position: center;
@@ -56,6 +75,7 @@
     }
   }
 }
+
 .banner-bottom {
   padding: 41px 0;
 

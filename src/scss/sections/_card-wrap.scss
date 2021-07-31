@@ -5,6 +5,13 @@
     color: clr(color-tertiary-black);
     margin: 73px;
   }
+
+  @include breakpoint(larg-device) {
+    padding-bottom: 30px;
+    &__holder {
+      flex-wrap: wrap;
+    }
+  }
 }
 .card-wrap__card {
   padding: 0 10px;
@@ -23,5 +30,9 @@
   }
   &--navigation {
     margin-top: 29px;
+  }
+
+  @include breakpoint(larg-device) {
+    margin-bottom: 50px;
   }
 }

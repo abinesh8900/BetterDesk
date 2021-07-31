@@ -13,14 +13,24 @@
   &__heading {
     margin-top: 83px;
     line-height: lh(lh-1.38);
+    max-width: 578px;
   }
   &__card-holder {
     max-width: 764px;
     margin-top: 39px;
   }
+
+  @include breakpoint(large-medium-device);
+  margin-bottom: 30px;
+  &__card-holder {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .product-card {
   flex-basis: 225px;
+  margin-bottom: 50px;
+  padding: 0 15px;
 
   &__picture {
     width: 99px;
