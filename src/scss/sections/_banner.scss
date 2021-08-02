@@ -78,9 +78,13 @@
 
 .banner-bottom {
   padding: 41px 0;
+  max-width: 1140px;
+  overflow-x: auto;
+  cursor: all-scroll;
 
   &__card {
-    width: 256px;
+    min-width: 256px;
+    margin: 0 14px;
 
     &-picture {
       width: 80px;
