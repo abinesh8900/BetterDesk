@@ -27,9 +27,17 @@
 
   &--desc {
     font-size: fs(fs-24);
+
+    @include breakpoint(small-screen) {
+      line-height: lh(lh-1.38);
+      font-size: fs(fs-18);
+    }
   }
   &--desc > strong {
     font-size: fs(fs-28);
+    @include breakpoint(small-screen) {
+      font-size: fs(fs-24);
+    }
   }
   &--link {
     margin-top: 21px;
@@ -62,6 +70,10 @@
   &--caption {
     margin-top: 31px;
     font-size: fs(fs-18);
+
+    @include breakpoint(small-screen) {
+      font-size: fs(fs-16);
+    }
   }
   &--play-btn {
     margin: 40px 0 78px 0;

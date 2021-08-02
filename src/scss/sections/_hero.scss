@@ -1,12 +1,18 @@
 .hero {
-  background: url(../images/illustration.png), clr(color-primary-purpel);
+  background: url(../images/illustration.png);
+  background-color: clr(color-primary-purpel);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right bottom;
   height: 100vh;
   position: relative;
 
   @include breakpoint(larg-device) {
     background-size: 80%;
+  }
+  @include breakpoint(small-screen) {
+    // text-align: center;
+    background-position-x: center;
+    background-size: 100%;
   }
 }
 .hero__content {
@@ -14,6 +20,10 @@
   top: 50%;
   transform: translateY(-50%);
   padding-right: 20px;
+
+  @include breakpoint(small-screen) {
+    top: 38%;
+  }
 }
 .hero__heading {
   color: clr(color-primary-white);

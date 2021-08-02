@@ -23,6 +23,9 @@
       flex-direction: column;
     }
   }
+  @include breakpoint(small-screen) {
+    height: 100vh;
+  }
 }
 .nav__item {
   @include nav-items(28px 19px 26px 19px);

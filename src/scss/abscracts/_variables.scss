@@ -6,6 +6,7 @@ $color: (
   color-tertiary-white: #eeeeee,
   color-primary-green: #3dbdb6,
   color-primary-purpel: #3e3e58,
+  color-opacity-primary-purpel: rgba(62, 62, 88, 0.5),
   color-opacity-primary-white: #ffffff33,
   color-secondart-black: #333333,
   color-tertiary-black: #4a4a4a,
@@ -49,8 +50,10 @@ $font-size: (
 
 //LINE HEIGHT
 $line-height: (
+  lh-1: 1,
   lh-1.08: 1.08,
   lh-1.13: 1.13,
+  lh-1.2: 1.2,
   lh-1.38: 1.38,
   lh-1.43: 1.43,
   lh-1.56: 1.56,

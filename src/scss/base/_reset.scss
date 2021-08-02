@@ -109,7 +109,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: lh(lh-1);
   font-weight: 400;
   font-family: Proxima Nova;
 }
@@ -160,10 +160,18 @@ button {
   padding: 0;
 }
 
-$heading-list: (h1 48px, h2 40px, h3 32px);
+// heading
+h2 {
+  line-height: lh(lh-1.2);
+}
+$heading-list: (h1 48px 44px, h2 40px 32px, h3 32px 26px);
 
 @each $heading in $heading-list {
   #{nth($heading, 1 )} {
     font-size: nth($heading, 2);
+
+    @include breakpoint(small-screen) {
+      font-size: nth($heading, 3);
+    }
   }
 }

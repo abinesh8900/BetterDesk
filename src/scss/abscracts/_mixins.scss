@@ -88,5 +88,9 @@
     @media screen and (max-width: 650px) {
       @content;
     }
+  } @else if $point == small-screen {
+    @media screen and (max-width: 450px) {
+      @content;
+    }
   }
 }

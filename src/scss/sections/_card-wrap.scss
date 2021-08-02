@@ -3,7 +3,7 @@
 
   &__heading {
     color: clr(color-tertiary-black);
-    margin: 73px;
+    margin-bottom: 73px;
   }
 
   @include breakpoint(larg-device) {

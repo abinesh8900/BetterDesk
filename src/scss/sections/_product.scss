@@ -6,8 +6,18 @@
     background-color: clr(color-secondary-white);
     border: 1px solid clr(color-tertiary-white);
 
+    @include breakpoint(large-medium-device) {
+      justify-content: unset;
+      max-width: 800px;
+      overflow: auto;
+    }
+
     &--product {
       flex-basis: 150px;
+
+      @include breakpoint(large-medium-device) {
+        min-width: 150px;
+      }
     }
   }
   &__heading {
