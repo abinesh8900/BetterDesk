@@ -4,16 +4,12 @@
   color: clr(color-primary-white);
 
   & > div {
-    flex-wrap: wrap;
+    @include flex-container($justify-content: space-between, $flex-wrap: wrap);
   }
 }
 .branding {
-  flex-grow: 2;
+  @include flex-item($flex-grow: 2);
   margin: 50px 20px 0 0;
-
-  &__logo {
-    max-height: 24px;
-  }
 
   &__desc {
     max-width: 196px;
@@ -29,7 +25,7 @@
   }
 }
 .footer-nav {
-  flex-grow: 1;
+  @include flex-item($flex-grow: 1);
   margin: 50px 20px 0 0;
   &__heading {
     font-size: fs(fs-13);
@@ -48,11 +44,11 @@
   }
 }
 .social-icons {
-  flex-grow: 3;
+  @include flex-item($flex-grow: 3);
   margin-top: 50px;
   text-align: end;
   &__twitter::after {
-    @include icon("\f099", fs-24, 5px, color-primary-white);
+    @include icon("\f081", fs-24, 5px, color-primary-white);
   }
   &__facebook::after {
     @include icon("\f39e", fs-24, 5px, color-primary-white);

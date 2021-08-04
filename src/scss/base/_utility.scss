@@ -14,37 +14,15 @@
 }
 
 //************* F L E X ***************//
-.flex {
-  display: flex;
-}
-.items-center {
-  align-items: center;
-}
-.items-end {
-  align-items: flex-end;
-}
-$justify-list: center, space-between;
 
-.justify- {
-  @each $justify in $justify-list {
-    &#{$justify} {
-      justify-content: $justify;
-    }
-  }
-}
-
-// ************************************//
-
-//icon
-// .icon {
-//   display: inline-block;
-//   font-style: normal;
-//   font-variant: normal;
-//   text-rendering: auto;
-//   -webkit-font-smoothing: antialiased;
-// }
-
-// text
 .text-center {
   text-align: center;
+}
+// add  by js
+.header-shadow {
+  box-shadow: $box-shadow-white;
+  transition-duration: 0.4s;
+}
+.menu-is-open {
+  overflow: hidden;
 }

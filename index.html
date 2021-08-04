@@ -8,37 +8,20 @@
       src="https://kit.fontawesome.com/f7256d9da1.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    /> -->
     <link rel="stylesheet" href="dist/css/style.css" />
     <title>Better Desk</title>
   </head>
-  <body>
-    <header class="top-header">
-      <div
-        class="nav container mx-auto flex justify-space-between items-center"
-      >
-        <a class="nav__logo logo" href="javascript:void(0)">
-          <img src="dist/images/logo.png" alt="logo" />
+  <body id="main">
+    <header class="top-header" id="main-header">
+      <div class="nav container mx-auto">
+        <a class="company-logo" href="javascript:void(0)">
+          <img src="dist/images/logo.webp" alt="logo" />
         </a>
-        <div>
-          <button
-            type="button"
-            class="nav-menu fas fa-bars"
-            id="menu-btn"
-          ></button>
-          <button
-            type="button"
-            class="close-nav fas fa-times hidden"
-            id="close-btn"
-          ></button>
-        </div>
+        <button type="button" class="nav-menu" id="menu-btn">
+          <span class="hamburger inline-block"></span>
+        </button>
         <nav class="nav__holder hidden" id="show-nav">
-          <ul class="flex">
+          <ul>
             <li class="nav__item">
               <a href="javascript:void(0)">Home</a>
             </li>
@@ -51,10 +34,10 @@
             <li class="nav__item">
               <a href="javascript:void(0)">Resources</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--signin">
               <a href="javascript:void(0)">Sign In</a>
             </li>
-            <li class="nav__item-btn">
+            <li class="nav__item--signup">
               <a href="javascript:void(0)">Sign Up</a>
             </li>
           </ul>
@@ -71,16 +54,13 @@
               customers love.
             </h1>
 
-            <form
-              action=""
-              method="get"
-              class="flex input-area input-area-dark"
-            >
+            <div class="input-area input-area-dark">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your work email"
+                autocomplete="off"
               />
               <button
                 class="input-area__submit-btn input-area-dark__submit-btn"
@@ -88,35 +68,35 @@
               >
                 <strong> Sign Up</strong>
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>
       <section class="product-wrap text-center">
-        <div class="product-wrap__product-bar flex justify-center">
+        <div class="product-wrap__product-bar">
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-1.png" alt="basecamp" />
+              <img src="dist/images/logo-1.webp" alt="basecamp" />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-2.png" alt="grubhub" />
+              <img src="dist/images/logo-2.webp" alt="grubhub" />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-3.png" alt="trello" />
+              <img src="dist/images/logo-3.webp" alt="trello" />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-4.png" alt="buffer" />
+              <img src="dist/images/logo-4.webp" alt="buffer" />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-5.png" alt="pocket" />
+              <img src="dist/images/logo-5.webp" alt="pocket" />
             </a>
           </figure>
         </div>
@@ -128,14 +108,12 @@
             <strong> reliable.</strong>
           </h3>
 
-          <div
-            class="flex product-wrap__card-holder justify-space-between mx-auto"
-          >
+          <div class="product-wrap__card-holder mx-auto">
             <div class="product-card">
               <figure
                 class="product-card__picture product-card__picture-blue mx-auto"
               >
-                <img src="dist/images/noun-550443.png" alt="support" />
+                <img src="dist/images/noun-550443.webp" alt="support" />
               </figure>
               <h5 class="product-card__heading">Support</h5>
               <p class="product-card__desc">
@@ -155,7 +133,7 @@
                   mx-auto
                 "
               >
-                <img src="dist/images/noun-744331.png" alt="help desk" />
+                <img src="dist/images/noun-744331.webp" alt="help desk" />
               </figure>
               <h5 class="product-card__heading">Help Desk</h5>
               <p class="product-card__desc">
@@ -172,7 +150,7 @@
               <figure
                 class="product-card__picture product-card__picture-pink mx-auto"
               >
-                <img src="dist/images/noun-812887.png" alt="Chat" />
+                <img src="dist/images/noun-812887.webp" alt="Chat" />
               </figure>
               <h5 class="product-card__heading">Chat</h5>
               <p class="product-card__desc">
@@ -198,7 +176,7 @@
               scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.
             </p>
           </article>
-          <div class="info-wrap__content flex justify-space-between">
+          <div class="info-wrap__content">
             <div class="info-wrap__content--desc">
               <article class="info-wrap__left-content">
                 <h4 class="info-wrap__left-content--heading">
@@ -219,17 +197,17 @@
               </ul>
             </div>
             <figure class="info-wrap__content--picture">
-              <img src="dist/images/to-do-list.png" alt="to-do-list" />
+              <img src="dist/images/to-do-list.webp" alt="to-do-list" />
             </figure>
           </div>
         </div>
       </section>
       <section class="card-wrap text-center">
         <h2 class="card-wrap__heading">Learn More About Us</h2>
-        <div class="flex container mx-auto justify-center card-wrap__holder">
+        <div class="container mx-auto card-wrap__holder">
           <div class="card-wrap__card">
             <figure class="card-wrap__card--picture">
-              <img src="dist/images/women-1209678-480.png" alt="women" />
+              <img src="dist/images/women-1209678-480.webp" alt="women" />
             </figure>
             <p class="card-wrap__card--desc mx-auto">
               Vestibulum rutrum quam vitae fringilla.
@@ -243,7 +221,7 @@
           </div>
           <div class="card-wrap__card">
             <figure class="card-wrap__card--picture">
-              <img src="dist/images/adult-1850177-480.png" alt="reading" />
+              <img src="dist/images/adult-1850177-480.webp" alt="reading" />
             </figure>
             <p class="card-wrap__card--desc mx-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscin.
@@ -257,7 +235,7 @@
           </div>
           <div class="card-wrap__card">
             <figure class="card-wrap__card--picture">
-              <img src="dist/images/rectangle-2-copy.png" alt="learning" />
+              <img src="dist/images/rectangle-2-copy.webp" alt="learning" />
             </figure>
             <p class="card-wrap__card--desc mx-auto">
               Fusce vehicula dolor arcu, sit amet blan.
@@ -273,7 +251,7 @@
       </section>
       <section class="banner">
         <div class="banner-top-bar">
-          <div class="container flex mx-auto items-center">
+          <div class="container mx-auto">
             <article class="banner-top-bar__content">
               <p class="banner-top-bar__content--desc">
                 <strong>BetterDesk </strong>
@@ -287,11 +265,11 @@
               >
             </article>
             <a href="javascript:void(0)" class="banner-top-bar__logo">
-              <img src="dist/images/112233.png" alt="brand name" />
+              <img src="dist/images/112233.webp" alt="brand name" />
             </a>
           </div>
         </div>
-        <div class="banner-body flex items-end justify-center text-center">
+        <div class="banner-body text-center">
           <div class="banner-body__content container mx-auto">
             <h2 class="banner-body__content--heading">
               “When BetterDesk was introduced, our business grows a lot —
@@ -306,48 +284,48 @@
             ></button>
           </div>
         </div>
-        <div class="banner-bottom container mx-auto flex">
-          <div class="flex items-center banner-bottom__card">
+        <div class="banner-bottom container mx-auto">
+          <div class="banner-bottom__card">
             <button
               class="banner-bottom__card-picture banner-bottom__card-picture-1"
             ></button>
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-4.png" alt="logo-4" />
+                <img src="dist/images/logo-4.webp" alt="logo-4" />
               </figure>
             </div>
           </div>
-          <div class="flex items-center banner-bottom__card">
+          <div class="banner-bottom__card">
             <button
               class="banner-bottom__card-picture banner-bottom__card-picture-2"
             ></button>
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Diana Moreno</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-2.png" alt="logo-2" />
+                <img src="dist/images/logo-2.webp" alt="logo-2" />
               </figure>
             </div>
           </div>
-          <div class="flex items-center banner-bottom__card">
+          <div class="banner-bottom__card">
             <button
               class="banner-bottom__card-picture banner-bottom__card-picture-3"
             ></button>
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-3.png" alt="logo-3" />
+                <img src="dist/images/logo-3.webp" alt="logo-3" />
               </figure>
             </div>
           </div>
-          <div class="flex items-center banner-bottom__card">
+          <div class="banner-bottom__card">
             <button
               class="banner-bottom__card-picture banner-bottom__card-picture-4"
             ></button>
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-1.png" alt="logo-1" />
+                <img src="dist/images/logo-1.webp" alt="logo-1" />
               </figure>
             </div>
           </div>
@@ -359,16 +337,13 @@
             Great Products Deliver Happiness to Users
           </h2>
 
-          <form
-            action=""
-            method="get"
-            class="flex input-wrap__input-area justify-center"
-          >
+          <form action="" method="get" class="input-wrap__input-area">
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter your work email"
+              autocomplete="off"
             />
             <button class="input-wrap__input-area-submit-btn" type="submit">
               <strong> Sign Up</strong>
@@ -378,10 +353,10 @@
       </section>
       <footer>
         <div class="footer">
-          <div class="container mx-auto flex justify-space-between">
+          <div class="container mx-auto">
             <div class="branding">
-              <figure class="branding__logo">
-                <img src="dist/images/logo.png" alt="logo" />
+              <figure class="company-logo">
+                <img src="dist/images/logo.webp" alt="logo" />
               </figure>
               <p class="branding__desc">
                 This template is created by

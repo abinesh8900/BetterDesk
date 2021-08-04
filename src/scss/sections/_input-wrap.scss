@@ -5,11 +5,9 @@
   &__heading {
     color: clr(color-primary-white);
   }
-  // @include breakpoint(medium-device) {
-  //   flex-direction: column;
-  // }
 }
 .input-wrap__input-area {
+  @include flex-container($justify-content: center);
   @include input-area(unset);
   & > input {
     border: 1px solid clr(color-primary-white);

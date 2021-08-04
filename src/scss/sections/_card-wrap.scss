@@ -5,11 +5,13 @@
     color: clr(color-tertiary-black);
     margin-bottom: 73px;
   }
-
+  &__holder {
+    @include flex-container();
+  }
   @include breakpoint(larg-device) {
     padding-bottom: 30px;
     &__holder {
-      flex-wrap: wrap;
+      @include flex-container($justify-content: center, $flex-wrap: wrap);
     }
   }
 }

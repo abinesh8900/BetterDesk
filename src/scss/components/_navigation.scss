@@ -4,11 +4,6 @@
   font-weight: 600;
 
   &::after {
-    // content: "\f054";
-    // font-family: "Font Awesome 5 Free";
-    // font-weight: 900;
-    // font-size: 11px;
-    // margin-left: 6px;
     @include icon("\f054", fs-12, 6px, color-primary-blue);
   }
 }

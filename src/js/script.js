@@ -1,15 +1,16 @@
 const navMenu = document.getElementById("menu-btn");
-const closeNavMenu = document.getElementById("close-btn");
 const showNav = document.getElementById("show-nav");
+const topHeader = document.getElementById("main-header");
+const body = document.getElementById("main");
+console.log(body);
 
 navMenu.addEventListener("click", function () {
-  navMenu.classList.add("hidden");
-  showNav.classList.remove("hidden");
-  closeNavMenu.classList.remove("hidden");
+  showNav.classList.toggle("hidden");
+  topHeader.classList.toggle("header-shadow");
+  navMenu.classList.toggle("active");
+  body.classList.toggle("menu-is-open");
 });
 
-closeNavMenu.addEventListener("click", function () {
-  closeNavMenu.classList.add("hidden");
-  showNav.classList.add("hidden");
-  navMenu.classList.remove("hidden");
+window.addEventListener("scroll", function () {
+  topHeader.classList.toggle("header-shadow", window.scrollY > 0);
 });

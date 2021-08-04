@@ -4,8 +4,8 @@ const sass = require("gulp-sass")(require("node-sass"));
 const prefix = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const terser = require("gulp-terser");
-// const imagewebp = require("gulp-webp");
-const imagemin = require("gulp-imagemin");
+const imagewebp = require("gulp-webp");
+// const imagemin = require("gulp-imagemin");
 const browserSync = require("browser-sync").create();
 
 //crearte functions
@@ -37,11 +37,11 @@ function optimizeimg() {
 }
 
 //webp images
-// function webpImage() {
-//   return src("dist/images/*{jpg,png}")
-//     .pipe(imagewebp())
-//     .pipe(dest("dist/images"));
-// }
+function webpImage() {
+  return src("src/images/*{jpg,png}")
+    .pipe(imagewebp())
+    .pipe(dest("dist/images"));
+}
 
 //browserSync
 function browserSyncServer(cb) {
@@ -63,16 +63,16 @@ function watchTask() {
   watch("*.html", browserSyncRelode); //
   watch("src/scss/**/*.scss", series(compilescss, browserSyncRelode)); //
   watch("src/js/**/*.js", series(jsmin, browserSyncRelode)); //
-  watch("src/images/*.{jpg,png}");
-  // watch("dist/images/*.{jpg,png}", webpImage);
+  // watch("src/images/*.{jpg,png}");
+  watch("dist/images/*.{jpg,png}", webpImage);
 }
 // default gulp
 
 exports.default = series(
   compilescss,
   jsmin,
-  optimizeimg,
-  // webpImage,
+  // optimizeimg,
+  webpImage,
   browserSyncServer,
   watchTask
 );

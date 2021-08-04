@@ -1,9 +1,11 @@
-@mixin nav-items($paddingValue) {
+@mixin nav-items($paddingValue, $paddingValue-lmd) {
   padding: $paddingValue;
   border-bottom: 4px solid clr(color-transparent);
+  transition: 0.3s;
 
   &:hover {
     border-bottom-color: clr(color-primary-green);
+    transition: 0.3s;
 
     & > a {
       opacity: 1;
@@ -15,7 +17,8 @@
   }
 
   @include breakpoint(large-medium-device) {
-    align-self: center;
+    padding: $paddingValue-lmd;
+    @include flex-item($align-self: center);
     border: 0;
   }
 }
@@ -34,7 +37,7 @@
     padding-left: 20px;
     font-size: fs(fs-16);
     border-radius: 3px 0 0 3px;
-    flex-basis: 302px;
+    @include flex-item($flex-basis: 302px);
 
     &::placeholder {
       opacity: 0.9;
@@ -43,7 +46,7 @@
 
   &__submit-btn,
   &-submit-btn {
-    flex-basis: 120px;
+    @include flex-item($flex-basis: 120px);
     font-size: 14px;
     border-radius: 0 4px 4px 0;
   }
@@ -60,15 +63,48 @@
   color: clr($colorValue);
 }
 
-// @mixin breakpoint($point){
-//   @if $point == footer-container {
-//     @media screen and (max-width: 1000px){
-//       @content;
-//     }
-//   }@else{
+// Flex
+@mixin flex-container(
+  $justify-content: false,
+  $align-items: false,
+  $flex-wrap: false,
+  $flex-direction: false
+) {
+  display: flex;
 
-//   }
-// }
+  @if $justify-content != false {
+    justify-content: $justify-content;
+  }
+  @if $align-items != false {
+    align-items: $align-items;
+  }
+  @if $flex-wrap != false {
+    flex-wrap: $flex-wrap;
+  }
+  @if $flex-direction != false {
+    flex-direction: $flex-direction;
+  }
+}
+
+@mixin flex-item(
+  $align-self: false,
+  $flex-basis: false,
+  $flex-direction: false,
+  $flex-grow: false
+) {
+  @if $align-self != false {
+    align-self: $align-self;
+  }
+  @if $flex-basis != false {
+    flex-basis: $flex-basis;
+  }
+  @if $flex-direction != false {
+    flex-direction: $flex-direction;
+  }
+  @if $flex-grow != false {
+    flex-grow: $flex-grow;
+  }
+}
 
 // Break pointes
 

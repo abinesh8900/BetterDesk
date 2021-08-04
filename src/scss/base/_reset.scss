@@ -2,7 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -135,15 +137,7 @@ table {
 a {
   text-decoration: none;
 }
-// h1 {
-//   font-size: fs(fs-48);
-// }
-// h2 {
-//   font-size: fs(fs-40);
-// }
-// h3 {
-//   font-size: fs(fs-32);
-// }
+
 strong {
   font-weight: 700;
 }

@@ -1,5 +1,5 @@
 .hero {
-  background: url(../images/illustration.png);
+  background: url(../images/illustration.webp);
   background-color: clr(color-primary-purpel);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -10,7 +10,6 @@
     background-size: 80%;
   }
   @include breakpoint(small-screen) {
-    // text-align: center;
     background-position-x: center;
     background-size: 100%;
   }
@@ -30,6 +29,7 @@
   line-height: lh(lh-1.13);
 }
 .input-area {
+  @include flex-container();
   @include input-area(422px);
 }
 .input-area-dark {

@@ -6,6 +6,7 @@ $color: (
   color-tertiary-white: #eeeeee,
   color-primary-green: #3dbdb6,
   color-primary-purpel: #3e3e58,
+  color-secondary-purpel: #5a5a81,
   color-opacity-primary-purpel: rgba(62, 62, 88, 0.5),
   color-opacity-primary-white: #ffffff33,
   color-secondart-black: #333333,
@@ -31,6 +32,7 @@ $linear-gradient-pink: linear-gradient(
 $linear-gradient-blue: linear-gradient(98deg, #1172d0 1%, #1d98d6 89%);
 
 $box-shadow-black: 1px 2px 3px 0 #0000001a;
+$box-shadow-white: 1px 2px 3px 0 #ffffff1a;
 
 //FONT SIZE
 $font-size: (

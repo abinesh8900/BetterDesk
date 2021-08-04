@@ -2,8 +2,9 @@
   background: $linear-gradient-blue;
   padding: 40px 0;
   & > div {
+    @include flex-container($align-items: center);
     @include breakpoint(medium-device) {
-      flex-direction: column-reverse;
+      @include flex-item($flex-direction: column-reverse);
       text-align: center;
     }
   }
@@ -19,10 +20,10 @@
   }
 }
 .banner-top-bar__content {
-  flex-basis: 687px;
+  @include flex-item($flex-basis: 687px);
   color: clr(color-primary-white);
   @include breakpoint(medium-device) {
-    flex-basis: unset;
+    @include flex-item($flex-basis: unset);
   }
 
   &--desc {
@@ -48,17 +49,17 @@
 }
 
 .banner-body {
-  background-image: url(../images/woman-690036-1280.png);
+  background-image: url(../images/woman-690036-1280.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: clr(color-opacity-primary-dark-blue);
   background-blend-mode: overlay;
-  //   opacity: 0.5;
   height: 719px;
+  @include flex-container($justify-content: center, $align-items: flex-end);
 }
 .banner-body__content {
-  flex-basis: 836px;
+  @include flex-item($flex-basis: 836px);
   color: clr(color-primary-white);
   font-family: OpenSans;
 
@@ -89,14 +90,12 @@
 }
 
 .banner-bottom {
-  padding: 41px 0;
-  max-width: 1140px;
-  overflow-x: auto;
-  cursor: all-scroll;
-
+  padding: 20px 0;
+  @include flex-container($justify-content: center, $flex-wrap: wrap);
   &__card {
-    min-width: 256px;
-    margin: 0 14px;
+    @include flex-container();
+    @include flex-item($flex-basis: 256px);
+    padding: 20px 0;
 
     &-picture {
       width: 80px;
@@ -108,16 +107,16 @@
       }
     }
     &-picture-1 {
-      background-image: url(../images/userpic-1.png);
+      background-image: url(../images/userpic-1.webp);
     }
     &-picture-2 {
-      background-image: url(../images/userpic-2.png);
+      background-image: url(../images/userpic-2.webp);
     }
     &-picture-3 {
-      background-image: url(../images/userpic-3.png);
+      background-image: url(../images/userpic-3.webp);
     }
     &-picture-4 {
-      background-image: url(../images/userpic-4.png);
+      background-image: url(../images/userpic-4.webp);
     }
 
     &-picture:hover::after {
