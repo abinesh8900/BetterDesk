@@ -72,9 +72,15 @@
 }
 .hamburger::before {
   top: -10px;
+  @include breakpoint(small-screen) {
+    top: -8px;
+  }
 }
 .hamburger::after {
   top: 10px;
+  @include breakpoint(small-screen) {
+    top: 8px;
+  }
 }
 
 .hamburger,
@@ -87,6 +93,11 @@
   left: 0;
   border-radius: 5px;
   transition: 0.3s;
+
+  @include breakpoint(small-screen) {
+    width: 24px;
+    height: 1px;
+  }
 }
 .hamburger::after,
 .hamburger::before {
