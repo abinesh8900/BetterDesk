@@ -2,7 +2,10 @@
   background: $linear-gradient-blue;
   padding: 40px 0;
   & > div {
-    @include flex-container($align-items: center);
+    @include flex-container(
+      $align-items: center,
+      $justify-content: space-between
+    );
     @include breakpoint(medium-device) {
       @include flex-item($flex-direction: column-reverse);
       text-align: center;
@@ -49,7 +52,10 @@
 }
 
 .banner-body {
-  background-image: url(../images/woman-690036-1280.webp);
+  background: -webkit-image-set(
+    url(../images/woman-690036-1280.webp) 1x,
+    url(../images/woman-690036-1280@2x.webp) 2x
+  );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

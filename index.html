@@ -8,6 +8,12 @@
       src="https://kit.fontawesome.com/f7256d9da1.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="dist/css/style.css" />
     <title>Better Desk</title>
   </head>
@@ -15,7 +21,15 @@
     <header class="top-header" id="main-header">
       <div class="nav container mx-auto">
         <a class="company-logo" href="javascript:void(0)">
-          <img src="dist/images/logo.webp" alt="logo" />
+          <img
+            src="dist/images/logo.webp"
+            srcset="
+              dist/images/logo.webp,
+              dist/images/logo@2x.webp 2x,
+              dist/images/logo@3x.webp 3x
+            "
+            alt="logo"
+          />
         </a>
         <button type="button" class="nav-menu" id="menu-btn">
           <span class="hamburger inline-block"></span>
@@ -57,8 +71,6 @@
             <div class="input-area input-area-dark">
               <input
                 type="email"
-                name="email"
-                id="email"
                 placeholder="Enter your work email"
                 autocomplete="off"
               />
@@ -76,27 +88,67 @@
         <div class="product-wrap__product-bar">
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-1.webp" alt="basecamp" />
+              <img
+                src="dist/images/logo-1.webp"
+                srcset="
+                  dist/images/logo-1.webp,
+                  dist/images/logo-1@2x.webp 2x,
+                  dist/images/logo-1@3x.webp 3x
+                "
+                alt="basecamp"
+              />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-2.webp" alt="grubhub" />
+              <img
+                src="dist/images/logo-2.webp"
+                srcset="
+                  dist/images/logo-2.webp,
+                  dist/images/logo-2@2x.webp 2x,
+                  dist/images/logo-2@3x.webp 3x
+                "
+                alt="grubhub"
+              />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-3.webp" alt="trello" />
+              <img
+                src="dist/images/logo-3.webp"
+                srcset="
+                  dist/images/logo-3.webp,
+                  dist/images/logo-3@2x.webp 2x,
+                  dist/images/logo-3@3x.webp 3x
+                "
+                alt="trello"
+              />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-4.webp" alt="buffer" />
+              <img
+                src="dist/images/logo-4.webp"
+                srcset="
+                  dist/images/logo-4.webp,
+                  dist/images/logo-4@2x.webp 2x,
+                  dist/images/logo-4@3x.webp 3x
+                "
+                alt="buffer"
+              />
             </a>
           </figure>
           <figure class="product-wrap__product-bar--product">
             <a href="javascript:void(0)">
-              <img src="dist/images/logo-5.webp" alt="pocket" />
+              <img
+                src="dist/images/logo-5.webp"
+                srcset="
+                  dist/images/logo-5.webp,
+                  dist/images/logo-5@2x.webp 2x,
+                  dist/images/logo-5@3x.webp 3x
+                "
+                alt="pocket"
+              />
             </a>
           </figure>
         </div>
@@ -113,7 +165,15 @@
               <figure
                 class="product-card__picture product-card__picture-blue mx-auto"
               >
-                <img src="dist/images/noun-550443.webp" alt="support" />
+                <img
+                  src="dist/images/noun-550443.webp"
+                  srcset="
+                    dist/images/noun-550443.webp,
+                    dist/images/noun-550443@2x.webp 2x,
+                    dist/images/noun-550443@3x.webp 3x
+                  "
+                  alt="support"
+                />
               </figure>
               <h5 class="product-card__heading">Support</h5>
               <p class="product-card__desc">
@@ -133,7 +193,15 @@
                   mx-auto
                 "
               >
-                <img src="dist/images/noun-744331.webp" alt="help desk" />
+                <img
+                  src="dist/images/noun-744331.webp"
+                  srcset="
+                    dist/images/noun-744331.webp,
+                    dist/images/noun-744331@2x.webp 2x,
+                    dist/images/noun-744331@3x.webp 3x
+                  "
+                  alt="help desk"
+                />
               </figure>
               <h5 class="product-card__heading">Help Desk</h5>
               <p class="product-card__desc">
@@ -150,7 +218,15 @@
               <figure
                 class="product-card__picture product-card__picture-pink mx-auto"
               >
-                <img src="dist/images/noun-812887.webp" alt="Chat" />
+                <img
+                  src="dist/images/noun-812887.webp"
+                  srcset="
+                    dist/images/noun-812887.webp,
+                    dist/images/noun-812887@2x.webp 2x,
+                    dist/images/noun-812887@3x.webp 3x
+                  "
+                  alt="Chat"
+                />
               </figure>
               <h5 class="product-card__heading">Chat</h5>
               <p class="product-card__desc">
@@ -177,7 +253,7 @@
             </p>
           </article>
           <div class="info-wrap__content">
-            <div class="info-wrap__content--desc">
+            <!-- <div class="info-wrap__content--desc">
               <article class="info-wrap__left-content">
                 <h4 class="info-wrap__left-content--heading">
                   Support for growing business
@@ -195,9 +271,57 @@
                 <li class="info-wrap__left-content--list">Minimal effort</li>
                 <li class="info-wrap__left-content--list">Maximum knowledge</li>
               </ul>
-            </div>
+            </div> -->
+            <ul class="info-wrap__accordion">
+              <li class="accordion-item open">
+                <h4>Support for growing business</h4>
+                <span class="fas fa-chevron-down"></span>
+                <p>
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor. Pellentesque non dignissim neque. Ut porta.
+                </p>
+              </li>
+              <li class="accordion-item">
+                <h4>1 billion interactions per year</h4>
+                <span class="fas fa-chevron-down"></span>
+                <p>
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor. Pellentesque non dignissim neque. Ut porta.
+                </p>
+              </li>
+              <li class="accordion-item">
+                <h4>Minimal effort</h4>
+                <span class="fas fa-chevron-down"></span>
+                <p>
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor. Pellentesque non dignissim neque. Ut porta.
+                </p>
+              </li>
+
+              <li class="accordion-item">
+                <h4>Maximum knowledge</h4>
+                <span class="fas fa-chevron-down"></span>
+                <p>
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor. Pellentesque non dignissim neque. Ut porta.
+                </p>
+              </li>
+            </ul>
+
             <figure class="info-wrap__content--picture">
-              <img src="dist/images/to-do-list.webp" alt="to-do-list" />
+              <img
+                srcset="
+                  dist/images/to-do-list.webp,
+                  dist/images/to-do-list@2x.webp 2x,
+                  dist/images/to-do-list@3x.webp 3x
+                "
+                src="dist/images/to-do-list.webp"
+                alt="to-do-list"
+              />
             </figure>
           </div>
         </div>
@@ -207,7 +331,15 @@
         <div class="container mx-auto card-wrap__holder">
           <div class="card-wrap__card">
             <figure class="card-wrap__card--picture">
-              <img src="dist/images/women-1209678-480.webp" alt="women" />
+              <img
+                src="dist/images/women-1209678-480.webp"
+                srcset="
+                  dist/images/women-1209678-480.webp,
+                  dist/images/women-1209678-480@2x.webp 2x,
+                  dist/images/women-1209678-480@3x.webp 3x
+                "
+                alt="women"
+              />
             </figure>
             <p class="card-wrap__card--desc mx-auto">
               Vestibulum rutrum quam vitae fringilla.
@@ -221,7 +353,15 @@
           </div>
           <div class="card-wrap__card">
             <figure class="card-wrap__card--picture">
-              <img src="dist/images/adult-1850177-480.webp" alt="reading" />
+              <img
+                src="dist/images/adult-1850177-480.webp"
+                srcset="
+                  dist/images/adult-1850177-480.webp,
+                  dist/images/adult-1850177-480@2x.webp 2x,
+                  dist/images/adult-1850177-480@3x.webp 3x
+                "
+                alt="reading"
+              />
             </figure>
             <p class="card-wrap__card--desc mx-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscin.
@@ -235,7 +375,15 @@
           </div>
           <div class="card-wrap__card">
             <figure class="card-wrap__card--picture">
-              <img src="dist/images/rectangle-2-copy.webp" alt="learning" />
+              <img
+                src="dist/images/rectangle-2-copy.webp"
+                srcset="
+                  dist/images/rectangle-2-copy.webp,
+                  dist/images/rectangle-2-copy@2x.webp 2x,
+                  dist/images/rectangle-2-copy@3x.webp 3x
+                "
+                alt="learning"
+              />
             </figure>
             <p class="card-wrap__card--desc mx-auto">
               Fusce vehicula dolor arcu, sit amet blan.
@@ -265,7 +413,15 @@
               >
             </article>
             <a href="javascript:void(0)" class="banner-top-bar__logo">
-              <img src="dist/images/112233.webp" alt="brand name" />
+              <img
+                src="dist/images/112233.webp"
+                srcset="
+                  dist/images/112233.webp,
+                  dist/images/112233@2x.webp 2x,
+                  dist/images/112233@3x.webp 3x
+                "
+                alt="brand name"
+              />
             </a>
           </div>
         </div>
@@ -292,7 +448,15 @@
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-4.webp" alt="logo-4" />
+                <img
+                  src="dist/images/logo-4.webp"
+                  srcset="
+                    dist/images/logo-4.webp,
+                    dist/images/logo-4@2x.webp 2x,
+                    dist/images/logo-4@3x.webp 3x
+                  "
+                  alt="buffer"
+                />
               </figure>
             </div>
           </div>
@@ -303,7 +467,15 @@
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Diana Moreno</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-2.webp" alt="logo-2" />
+                <img
+                  src="dist/images/logo-2.webp"
+                  srcset="
+                    dist/images/logo-2.webp,
+                    dist/images/logo-2@2x.webp 2x,
+                    dist/images/logo-2@3x.webp 3x
+                  "
+                  alt="grubhub"
+                />
               </figure>
             </div>
           </div>
@@ -314,7 +486,15 @@
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-3.webp" alt="logo-3" />
+                <img
+                  src="dist/images/logo-3.webp"
+                  srcset="
+                    dist/images/logo-3.webp,
+                    dist/images/logo-3@2x.webp 2x,
+                    dist/images/logo-3@3x.webp 3x
+                  "
+                  alt="trello"
+                />
               </figure>
             </div>
           </div>
@@ -325,7 +505,15 @@
             <div class="banner-bottom__card-holder">
               <p class="banner-bottom__card-holder-name">Sharon Herrera</p>
               <figure class="banner-bottom__card-holder-logo">
-                <img src="dist/images/logo-1.webp" alt="logo-1" />
+                <img
+                  src="dist/images/logo-1.webp"
+                  srcset="
+                    dist/images/logo-1.webp,
+                    dist/images/logo-1@2x.webp 2x,
+                    dist/images/logo-1@3x.webp 3x
+                  "
+                  alt="basecamp"
+                />
               </figure>
             </div>
           </div>
@@ -340,8 +528,6 @@
           <form action="" method="get" class="input-wrap__input-area">
             <input
               type="email"
-              name="email"
-              id="email"
               placeholder="Enter your work email"
               autocomplete="off"
             />
@@ -356,7 +542,15 @@
           <div class="container mx-auto">
             <div class="branding">
               <figure class="company-logo">
-                <img src="dist/images/logo.webp" alt="logo" />
+                <img
+                  src="dist/images/logo.webp"
+                  srcset="
+                    dist/images/logo.webp,
+                    dist/images/logo@2x.webp 2x,
+                    dist/images/logo@3x.webp 3x
+                  "
+                  alt="logo"
+                />
               </figure>
               <p class="branding__desc">
                 This template is created by

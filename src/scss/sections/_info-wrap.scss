@@ -18,41 +18,90 @@
       width: 100%;
     }
   }
-  @include breakpoint(medium-device) {
+  @include breakpoint(larg-device) {
     &__content {
-      flex-direction: column;
+      @include flex-container($flex-direction: column);
+      max-width: 550px;
+      margin: 40px auto 0 auto;
     }
     &__content--picture {
       margin-top: 30px;
     }
   }
 }
-.info-wrap__left-content {
-  margin: 46px 20px 30px 0;
-  padding: 18px 26px 33px 32px;
-  max-width: 502px;
+// .info-wrap__left-content {
+//   margin: 46px 20px 30px 0;
+//   padding: 18px 26px 33px 32px;
+//   max-width: 502px;
+//   border-radius: 3px;
+//   box-shadow: $box-shadow-black;
+//   background-color: clr(color-opacity-secondary-bule);
+//   color: clr(color-primary-white);
+
+//   &--heading {
+//     margin: 20px 0;
+//     font-size: fs(fs-20);
+//   }
+//   &--desc {
+//     line-height: lh(lh-1.43);
+//     font-size: fs(fs-14);
+//   }
+//   &--list-holder {
+//     margin-left: 33px;
+//   }
+//   &--list {
+//     color: clr(color-secondary-blue);
+//     margin-bottom: 30px;
+//   }
+
+//   @include breakpoint(large-medium-device) {
+//     margin-top: 0;
+//   }
+// }
+.info-wrap__accordion {
+  flex-basis: 502px;
+  margin-right: 30px;
+
+  @include breakpoint(larg-device) {
+    margin-right: unset;
+    flex-basis: 380px;
+  }
+}
+.accordion-item {
   border-radius: 3px;
   box-shadow: $box-shadow-black;
   background-color: clr(color-opacity-secondary-bule);
+  color: clr(color-secondary-blue);
+  padding: 20px 33px;
+  margin-bottom: 20px;
+  @include flex-container($justify-content: space-between, $flex-wrap: wrap);
+  position: relative;
+}
+
+.accordion-item > span {
+  position: absolute;
+  right: 30px;
+  transition: 0.5s;
+  font-size: fs(fs-18);
+}
+.accordion-item > p {
+  display: none;
+}
+.open.accordion-item {
   color: clr(color-primary-white);
-
-  &--heading {
-    margin: 20px 0;
-    font-size: fs(fs-20);
-  }
-  &--desc {
-    line-height: lh(lh-1.43);
-    font-size: fs(fs-14);
-  }
-  &--list-holder {
-    margin-left: 33px;
-  }
-  &--list {
-    color: clr(color-secondary-blue);
-    margin-bottom: 30px;
-  }
-
-  @include breakpoint(large-medium-device) {
-    margin-top: 0;
-  }
+  padding: 30px 33px;
+}
+.open.accordion-item > h4 {
+  font-size: fs(fs-20);
+}
+.open.accordion-item > span {
+  transform: rotate(180deg);
+}
+.open.accordion-item > p {
+  margin-top: 20px;
+  display: block;
+  font-size: fs(fs-14);
+  line-height: lh(lh-1.43);
+  padding-bottom: 12px;
+  width: 100%;
 }

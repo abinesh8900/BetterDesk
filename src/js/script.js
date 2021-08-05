@@ -2,7 +2,6 @@ const navMenu = document.getElementById("menu-btn");
 const showNav = document.getElementById("show-nav");
 const topHeader = document.getElementById("main-header");
 const body = document.getElementById("main");
-console.log(body);
 
 navMenu.addEventListener("click", function () {
   showNav.classList.toggle("hidden");
@@ -14,3 +13,11 @@ navMenu.addEventListener("click", function () {
 window.addEventListener("scroll", function () {
   topHeader.classList.toggle("header-shadow", window.scrollY > 0);
 });
+
+const accordions = document.getElementsByClassName("accordion-item");
+
+for (const accordion of accordions) {
+  accordion.addEventListener("click", function () {
+    accordion.classList.toggle("open");
+  });
+}
