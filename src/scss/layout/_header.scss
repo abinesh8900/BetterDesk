@@ -27,7 +27,7 @@
 }
 .nav__holder {
   & > ul {
-    @include flex-container();
+    @include flex-container($align-items: center);
   }
   @include breakpoint(large-medium-device) {
     width: 100%;
@@ -38,21 +38,71 @@
     }
   }
 }
-.nav__item {
-  @include nav-items(28px 19px 26px 19px, 25px 0);
+
+[class^="nav-item"] > a {
+  color: clr(color-primary-white);
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-duration: 500ms;
+  margin: 0 18px;
 }
-.nav__item--signup {
-  @include nav-items(28px 19px 26px 19px, 30px 0);
+[class^="nav-item-sign"] > a:hover {
+  opacity: 1;
+}
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition-property: width;
+    transition-duration: 500ms;
+  }
+
+  &:hover > a {
+    opacity: 1;
+  }
+
+  &:hover::after {
+    background-color: clr(color-primary-green);
+    width: 100%;
+  }
+}
+.nav-item-signin,
+.nav-item {
+  padding: 27px 0;
+}
+.nav-item-signup {
+  @include breakpoint(large-medium-device) {
+    padding-top: 27px;
+  }
   & > a {
     border: 1px solid;
     padding: 10px 20px;
     border-radius: 4px;
   }
 }
-.nav__item--signin,
-.nav__item--signup {
-  border-bottom: none;
-}
+// .nav__item {
+//   @include nav-items(28px 19px 26px 19px, 25px 0);
+// }
+// .nav__item--signup {
+//   @include nav-items(28px 19px 26px 19px, 30px 0);
+//   & > a {
+//     border: 1px solid;
+//     padding: 10px 20px;
+//     border-radius: 4px;
+//   }
+// }
+// .nav__item--signin,
+// .nav__item--signup {
+//   border-bottom: none;
+// }
 
 .nav-menu {
   background-color: clr(color-transparent);
@@ -65,6 +115,7 @@
 
   @include breakpoint(large-medium-device) {
     display: inline-block;
+    z-index: 10;
   }
 }
 .hamburger {
@@ -96,7 +147,7 @@
 
   @include breakpoint(small-screen) {
     width: 24px;
-    height: 1px;
+    height: 2px;
   }
 }
 .hamburger::after,

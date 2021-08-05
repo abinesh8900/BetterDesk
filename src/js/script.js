@@ -6,6 +6,7 @@ const body = document.getElementById("main");
 navMenu.addEventListener("click", function () {
   showNav.classList.toggle("hidden");
   topHeader.classList.toggle("header-shadow");
+  topHeader.classList.toggle("full-height");
   navMenu.classList.toggle("active");
   body.classList.toggle("menu-is-open");
 });
