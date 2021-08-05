@@ -1,28 +1,3 @@
-// @mixin nav-items($paddingValue, $paddingValue-lmd) {
-//   padding: $paddingValue;
-//   border-bottom: 4px solid clr(color-transparent);
-//   transition: 0.3s;
-
-//   &:hover {
-//     border-bottom-color: clr(color-primary-green);
-//     transition: 0.3s;
-
-//     & > a {
-//       opacity: 1;
-//     }
-//   }
-//   & > a {
-//     color: clr(color-primary-white);
-//     opacity: 0.5;
-//   }
-
-//   @include breakpoint(large-medium-device) {
-//     padding: $paddingValue-lmd;
-//     @include flex-item($align-self: center);
-//     border: 0;
-//   }
-// }
-
 @mixin input-area($widthValue) {
   margin-top: 47px;
   width: $widthValue;
