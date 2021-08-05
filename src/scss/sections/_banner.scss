@@ -52,10 +52,7 @@
 }
 
 .banner-body {
-  background: -webkit-image-set(
-    url(../images/woman-690036-1280.webp) 1x,
-    url(../images/woman-690036-1280@2x.webp) 2x
-  );
+  background: url(../images/woman-690036-1280.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,6 +60,13 @@
   background-blend-mode: overlay;
   height: 719px;
   @include flex-container($justify-content: center, $align-items: flex-end);
+
+  @include breakpoint(exta-large-device) {
+    background-image: url(../images/woman-690036-1280@2x.webp);
+  }
+  @include breakpoint(small-screen) {
+    background-position: top 0 right 25%;
+  }
 }
 .banner-body__content {
   @include flex-item($flex-basis: 836px);
@@ -89,8 +93,10 @@
     width: 70px;
     background: $linear-gradient-green-blue;
 
-    &::after {
-      @include icon("\f04b", fs-24, 5px, color-primary-voilet);
+    & > span {
+      font-size: fs(fs-24);
+      margin-left: 5px;
+      color: clr(color-primary-purpel);
     }
   }
 }
@@ -108,8 +114,10 @@
       height: 80px;
       border-radius: 50%;
 
-      &::after {
-        @include icon("\f04b", fs-14, 5px, color-primary-white);
+      & > span {
+        font-size: fs(fs-14);
+        margin-left: 5px;
+        color: clr(color-primary-white);
       }
     }
     &-picture-1 {
@@ -125,7 +133,7 @@
       background-image: url(../images/userpic-4.webp);
     }
 
-    &-picture:hover::after {
+    &-picture:hover > span {
       display: none;
     }
     &-picture:hover + .banner-bottom__card-holder {

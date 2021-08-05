@@ -1,15 +1,15 @@
 .hero {
-  background: -webkit-image-set(
-    url(../images/illustration.webp) 1x,
-    url(../images/illustration@2x.webp) 2x,
-    url(../images/illustration@3x.webp) 3x
-  );
+  background-image: url(../images/illustration.webp);
   background-color: clr(color-primary-purpel);
   background-repeat: no-repeat;
   background-position: right bottom;
   height: 100vh;
   position: relative;
 
+  @include breakpoint(exta-large-device) {
+    background-image: url(../images/illustration@2x.webp);
+    background-size: 750px 550px;
+  }
   @include breakpoint(larg-device) {
     background-size: 80%;
   }

@@ -47,14 +47,14 @@
   @include flex-item($flex-grow: 3);
   margin-top: 50px;
   text-align: end;
-  &__twitter::after {
-    @include icon("\f081", fs-24, 5px, color-primary-white);
-  }
-  &__facebook::after {
-    @include icon("\f39e", fs-24, 5px, color-primary-white);
-  }
-  &__linkedin::after {
-    @include icon("\f0e1", fs-24, 5px, color-primary-white);
+  &__link {
+    margin-right: 20px;
+
+    & > span {
+      font-size: fs(fs-16);
+      color: clr(color-primary-white);
+      opacity: 0.6;
+    }
   }
 }
 .footer-bottom {

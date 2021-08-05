@@ -1,6 +1,5 @@
 .product-wrap {
-  margin-bottom: 80px;
-
+  margin-bottom: 30px;
   &__product-bar {
     padding: 20px 0;
     background-color: clr(color-secondary-white);
@@ -24,7 +23,6 @@
   }
 
   @include breakpoint(large-medium-device) {
-    margin-bottom: 30px;
     &__card-holder {
       @include flex-container($flex-wrap: wrap, $justify-content: center);
     }

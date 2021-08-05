@@ -52,17 +52,6 @@
   }
 }
 
-// **************** //
-
-@mixin icon($icon, $fsValue, $ml, $colorValue) {
-  content: $icon;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: fs($fsValue);
-  margin-left: $ml;
-  color: clr($colorValue);
-}
-
 // Flex
 @mixin flex-container(
   $justify-content: false,
@@ -109,7 +98,11 @@
 // Break pointes
 
 @mixin breakpoint($point) {
-  @if $point == larg-device {
+  @if $point == exta-large-device {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == larg-device {
     @media screen and (max-width: 900px) {
       @content;
     }

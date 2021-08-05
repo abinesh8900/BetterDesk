@@ -3,7 +3,8 @@
   color: clr(color-primary-blue);
   font-weight: 600;
 
-  &::after {
-    @include icon("\f054", fs-12, 6px, color-primary-blue);
+  & > span {
+    font-size: fs(fs-12);
+    margin-left: 6px;
   }
 }
